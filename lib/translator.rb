@@ -17,11 +17,8 @@ end
 def get_english_meaning(file_path, emoticon)
   library = load_library(file_path)
   library.each do |meaning, idiom|
-    puts "==========================================================="
-    puts meaning 
     return meaning if idiom[:japanese] == emoticon
   end
-  "404"
    
 end
 
