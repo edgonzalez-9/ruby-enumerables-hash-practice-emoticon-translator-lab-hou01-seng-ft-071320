@@ -16,7 +16,7 @@ end
 
 def get_english_meaning(file, emoticon)
   load_library('lib/emoticons.yml')
-  
+  library.each do |meaning, emoticon|
   
 end
 
