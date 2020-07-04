@@ -14,7 +14,7 @@ def load_library(file)
   
 end
 
-def get_english_meaning(file, emoticon)
+def get_english_meaning(file_path, emoticon)
   load_library('lib/emoticons.yml')
   library.each do |meaning, idiom|
     puts "==========================================================="
