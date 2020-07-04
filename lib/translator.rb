@@ -19,7 +19,7 @@ def get_english_meaning(file_path, emoticon)
   library.each do |meaning, idiom|
     return meaning if idiom[:japanese] == emoticon
   end
-   
+   "Sorry, that emoticon was not found"
 end
 
 def get_japanese_emoticon(japanese_emoticon)
