@@ -17,10 +17,11 @@ end
 def get_english_meaning(file, emoticon)
   load_library('lib/emoticons.yml')
   library.each do |meaning, idiom|
+    puts meaning 
     return meaning if idiom[:japanese] == emoticon
   end
   "404"
-  binding.pry 
+   
 end
 
 def get_japanese_emoticon(japanese_emoticon)
